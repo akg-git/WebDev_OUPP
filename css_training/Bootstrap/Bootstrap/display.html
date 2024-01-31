@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties Example</title>
+    <style>
+        /* Default is inline */
+        #inline-element {
+            border: 1px solid black;
+        }
+
+        /* Display as a block element */
+        #block-element {
+            display: block;
+            background-color: lightblue;
+        }
+
+        /* Display as a flex container */
+        #flex-container {
+            display: flex;
+            border: 1px solid green;
+        }
+
+        /* Display as a grid container */
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: 1px solid orange;
+        }
+
+        /* Display as an inline-level block container */
+        #inline-block-element {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+
+        /* Display as an inline-level flex container */
+        #inline-flex-container {
+            display: inline-flex;
+            border: 1px solid purple;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="inline-element">Inline Element</div>
+
+    <div id="block-element">Block Element</div>
+
+    <div id="flex-container">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <div id="grid-container">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+    </div>
+
+    <div id="inline-block-element">Inline-Block Element</div>
+
+    <div id="inline-flex-container">
+        <div>Inline Flex Item 1</div>
+        <div>Inline Flex Item 2</div>
+        <div>Inline Flex Item 3</div>
+    </div>
+
+</body>
+</html>
