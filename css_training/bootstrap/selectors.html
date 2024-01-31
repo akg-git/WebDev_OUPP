@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Group Selector */
+        h1, p {
+            color: blue;
+        }
+
+        /* Element Selector */
+        p {
+            font-size: 18px;
+        }
+
+        /* ID Selector */
+        #special-text {
+            font-weight: bold;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Example</h1>
+    <p>This is a paragraph with a <span id="special-text">special</span> ID.</p>
+    <p class="highlight">This paragraph has a class for highlighting.</p>
+</body>
+</html>
