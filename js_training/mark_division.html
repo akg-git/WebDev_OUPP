@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var mark = parseInt(prompt("Enter your mark = "));
+        if(mark<0 || mark>100){
+            document.write("Invalid Input!! Enter the number[0-100]")
+        }else if(mark>=60 && mark<=100){
+           document.write("You are First Class");
+        }else if(mark>=50 && mark<60){
+           document.write("You are Second Class");
+        }else if(mark>=40 && mark<50){
+           document.write("You are Third Class");
+        }else{
+           document.write("Sorry!! You are Failed!!")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
