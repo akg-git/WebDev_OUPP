@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro Traders</title>
+</head>
+
+<body bgcolor="lightblue">
+    <h1 align="center">Bro Traders</h1>
+    <hr><br>
+
+    <!-- BILLING FORM -->
+    <form name="billingForm" action="#" onsubmit="return billing()">
+        <!-- call a function onsubmit -->
+
+        <table align="center" border="1" cellpadding="10" cellspacing="0">
+            <Caption><b>Bill Form</b></Caption>
+            <tr>
+                <td><b>Quantity</b></td>
+                <td><input type="number" id="quantity" name="quantity" placeholder="0" required></td>
+            </tr>
+
+            <tr>
+                <td><b>Price</b></td>
+                <td><input type="number" id="price" name="price" placeholder="0" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Generate Bill</button></td>
+            </tr>
+
+        </table>
+        <br><br><br><br>
+
+
+        <!-- GENERATE BILL -->
+        <table align="center" border="1" cellpadding="10" cellspacing="0">
+            <h3 align="center">Auto-generated Bill</h3>
+            <tr>
+                <td><b>Quantity</b></td>
+                <td><input type="number" id="q1" name="q1"></td>
+            </tr>
+
+            <tr>
+                <td><b>Price</b></td>
+                <td><input type="number" id="p1" name="p1"></td>
+            </tr>
+            <tr>
+                <td><b>Gross Amount</b></td>
+                <td><input type="number" id="ga1" name="ga1"></td>
+            </tr>
+
+            <tr>
+                <td><b>Discount</b></td>
+                <td><input type="number" id="d1" name="d1"></td>
+            </tr>
+            <tr>
+                <td><b>Final Amount</b></td>
+                <td><input type="number" id="fa" name="fa"></td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <script src="billing_form.js"></script>
+    <!-- <script src="billing_form2.js"></script> -->
+</body>
+
+</html>
