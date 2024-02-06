@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <article>
+
+        <h3>var</h3>
+        <p>
+            * scope:  global scope<br>
+            [default value = undefined]
+            1. declaration and initialization separately possible for var<br>
+            2. re-declaration is allowed.<br>
+            3. re-initialization is allowed.
+            4. thus it provides latest updated value<br>
+            5. Hoisting: returns `undefined` [ declaration is hoisted and initialized to undefined]<br>
+        </p><hr>
+
+        <h3>let</h3>
+        <p>
+            * scope: block level<br>
+            [default value = undefined]
+            1. declaration and initialization separately possible for let <br>
+            2. No re-declaration<br>
+            3. re-initialization is allowed.
+            4. it provides updated value as per scope<br>
+            5. Hoisting: returns `reference error` [ declaration is hoisted but not initialised]<br>
+
+        </p><hr>
+
+        <h3>const</h3>
+        <p>
+            * scope: block level<br>
+            [No default value]
+            1. declaration and initialization separately is not possible for const. It must be done simultaneously(in one line).<br>
+            2. No re-declaration (obviously).<br>
+            3. re-initialization is not allowed.
+            4. It can't be updated or modified.<br>
+            5. Hoisting: returns `reference error` [ can not be accessed without initialize]
+        </p><hr>
+
+        <h3>var vs let vs const</h3>
+        <ul>
+            <li>var declarations are globally scoped or function scoped while let and const are block scoped. </li>
+            <li>var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared. </li>
+            <li>They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.</li>
+            <li>While var and let can be declared without being initialized, const must be initialized during declaration.</li>
+        </ul>
+
+    </article>
+
+    <script src="let_var_const.js"></script>
+    
+</body>
+</html>
