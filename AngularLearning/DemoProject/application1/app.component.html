@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Component Page</title>
+</head>
+
+<body>
+
+
+
+    lets start the implementation of the great Single Page Application<br>
+    The Binding framework<br>
+    <b>
+        !!!! ANGULAR !!!!
+    </b>
+
+    <article>
+        <p>
+            <dt>What is Angular?</dt>
+            <dd>This is a Typescript based binding framework.<br> It is free, open source</dd>
+            <dt>What is Component</dt>
+            <dd>Components are the fundamental building block for creating applications in Angular. By leveraging
+                component architecture, Angular aims to provide structure for organizing your project i</dd>
+            <dt>What is Module?</dt>
+            <dd>Module is combination of related components</dd>
+
+        </p>
+    </article>
+
+    <article>
+
+        <h2>Component Creation Process</h2>
+        <p>
+            <dt>Step 1</dt>
+            <dd>command: ng g c <code>component1</code></dd>
+            <dt>Step 2</dt>
+            <dd>Write something inside "component1.component.html"</dd>
+            <dt>Step 3</dt>
+            <dd>Copy the selector from "component1.component.ts" file and paste into "app.component.html"</dd>
+            <dt>Step 4</dt>
+            <dd>Run your server using command "ng serve" and run on browser using "localhost:4200"</dd>
+        </p>
+
+    </article>
+
+    <!-- Mentioning Component1 here -->
+    <app-component1>
+
+        <h1>Hi! Viewrs. I am from App Component File</h1>
+        <header>
+        <h6>App Component File begins here</h6>
+        </header>
+
+        <footer>
+            <h6>App Component File Ends here</h6>
+            <h6>&copy;2024 All rights are reserved by OUPP</h6>
+        </footer>
+
+    </app-component1>
+
+    <!-- Mentioning user-login-component  here -->
+    <app-user-login-component>
+
+        <h1>Hi! Viewrs. I am from user-login-component File</h1>
+    </app-user-login-component>
+
+
+
+</body>
+
+</html>
